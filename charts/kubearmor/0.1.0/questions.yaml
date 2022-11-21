@@ -1,0 +1,12 @@
+namespace: kube-system
+questions:
+  - variable: kubearmorrelay.enabled
+    label: KubeArmor Relay
+    description: "Use KubeArmor relay to aggregate telemetry from individual KubeArmor demains"
+    type: boolean
+    default: "true"
+  - variable: environment.name
+    label: Kubernetes Environment
+    description: "Kubenernetes environment, helps detect the CRI socket"
+    type: string
+    default: "k3s"
